@@ -13,3 +13,12 @@ The project makes use of the following components:
 - Color Picker plugin to select color
 - Tiny Scrollbar plugin to add vertical scrollbar support
 - Images taken from Graffletopia iPhone sets
+
+To run:
+1) Install node.js
+2) Type 
+
+node app.js
+
+and open
+http://localhost:3000

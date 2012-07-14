@@ -1,0 +1,125 @@
+<div class="container">
+        <div class="sixteen columns">
+            Welcome to <strong>Simple Mobile Mockup</strong>, Version 0.1. <u>Hot keys</u>: Shift, Delete, Up, Down, Left, Right to select/delete/move current active element.
+            <br/>  
+        </div>
+        <div class="one-third column">
+              
+            <input type="button" value="New" id="newBtn" />
+            <input type="button" value="Save" id="saveBtn" />
+            <input type="button" value="Load" id="loadBtn" />
+            
+            <input type="button" value="Preview" id="previewBtn" />
+        
+            <select name="widgetSelector" id="widgetSelector">
+                <option value="iPhone">iPhone</option>
+                <option value="Android">Android</option>
+            </select>
+            
+            <div id="widgetScroller">
+                <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+                <div class="viewport">
+                    <div id="widgetArea" class="overview">
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="log"></div>    
+        </div>
+        <div class="two-thirds column">
+            <div class="eight columns alpha">
+                <input type="button" value="Move To Top" id="moveTopBtn" />
+                <input type="button" value="Move To Bottom" id="moveBottomBtn" />
+                <input type="button" value="Move Up" id="moveUpBtn" />
+                <input type="button" value="Move Down" id="moveDownBtn" />
+                <div id="drawingArea">
+                   
+                </div>
+            </div>
+            <div class="two columns omega">
+                <!-- properties for a widget in canvas when selected -->
+                <h4>Properties</h4>
+                
+                <div id="propertyPanel">
+                    <div class="commonProperties">
+                        <div class="fillcolor">
+                            Fill Color:
+                            <div id="colorSelector">
+                                <div style="background-color: black">&nbsp;</div>
+                            </div>
+                        </div>
+                        <div class="others">
+                            Outline Color:
+                            <div id="strokeSelector">
+                                <div style="background-color: black">&nbsp;</div>
+                            </div>
+                            
+                            Outline Thickness:
+                            <div class="strokeWidthThickness">
+                                <select name="strokeWidthThickness" id="strokeWidthThickness">
+                                    <option value="0">None</option>
+                                    <option value="1">Very Thin</option>
+                                    <option value="2">Thin</option>
+                                    <option value="4">Thick</option>
+                                    <option value="8">Thicker</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="textProperties">
+                        Text: 
+                        <div class="textElInput">
+                            <input type="text" name="textInput" id="textInput" value="" />
+                            <span class="propertyTips">hit Enter key to save</span>
+                        </div>
+                        
+                        Font Size: 
+                        <div class="fontSizeInput">
+                            <input type="text" name="fontSizeInput" id="fontSizeInput" value="12" />
+                            <span class="propertyTips">hit Enter key to save</span>
+                        </div>
+                        
+                        Font:
+                        <div class="fontInput">
+                            <select name="fontInput" id="fontInput">
+                                <option value="Arial">Arial</option>
+                                <option value="Helvetica">Helvetica</option>
+                                <option value="Tahoma">Tahoma</option>
+                                <option value="Calibri">Calibri</option>
+                                <option value="Times New Roman">Times New Roman</option>
+                                <option value="Verdana">Verdana</option>
+                                <option value="Courier New">Courier New</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    
+                    <div id="extraProperties">
+                        <input type="button" value="Delete" id="deleteBtn" />
+                    </div>
+                   
+                </div>
+                
+            </div>
+        </div>
+       
+
+</div><!-- container -->
+
+<!-- save form will show the json string generated from Kinetic -->
+<div id="saveForm" title="Save Data">
+	<p>Export data: </p>
+	<textarea id="saveJson" rows="8" cols="40">...</textarea>
+    <p>You can restore the mockup state by loading the data via the "Load" button. </p>
+		
+</div>
+
+<!-- user can load the mockup by pasting a JSON -->
+<div id="loadForm" title="Load Data">
+	<p>Paste data: </p>
+	<textarea id="pasteJson" rows="8" cols="40"></textarea>
+</div>
+
+
+ 

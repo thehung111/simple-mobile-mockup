@@ -3,6 +3,10 @@ Simple Mobile Mockup
 
 Mobile screen mockup prototype for iPhone and Android using KineticJS &amp; jQuery UI.
 
+<img src="http://www.ngo-hung.com/files/images/MobileMockup.png" width="600" />
+
+Demo: <http://ngo-hung.com/project/mobile_mockup>
+
 Users can drag shapes to HTML5 Canvas to build an appplication mockup screen.
 
 The project makes use of the following components:
